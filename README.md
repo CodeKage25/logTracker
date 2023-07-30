@@ -31,73 +31,73 @@ Optionally, customize the log level and log format (if needed):
 
 Start logging:
 
-logTracker.startLogging();
+    logTracker.startLogging();
 
 
 
 Log messages to the console:
 
-console.log('This is a regular log message.');
-console.info('This is an info message.');
-console.warn('Warning! Something might be wrong.');
-console.error('Error occurred:', 'Some error message.');
+    console.log('This is a regular log message.');
+    console.info('This is an info message.');
+    console.warn('Warning! Something might be wrong.');
+    console.error('Error occurred:', 'Some error message.');
 
 
 Optionally, enable file logging:
 
-logTracker.logToFile = true; // Enable file logging
-logTracker.logFilePath = 'app.log'; // Specify the log file path
+    logTracker.logToFile = true; // Enable file logging
+    logTracker.logFilePath = 'app.log'; // Specify the log file path
 
 
 Start monitoring (if desired):
 
-logTracker.startMonitoring();
+    logTracker.startMonitoring();
 
 Optionally, customize the monitoring interval:
 
-logTracker.monitoringInterval = 5000; // Set the monitoring interval in milliseconds
+    logTracker.monitoringInterval = 5000; // Set the monitoring interval in milliseconds
 
 
 Log metrics (CPU and memory usage) at the specified interval:
 
-// Metrics will be logged at the specified interval while monitoring is enabled
+    // Metrics will be logged at the specified interval while monitoring is enabled
 
 
 Stop monitoring and logging when done:
 
-logTracker.stopMonitoring();
-logTracker.stopLogging();
+    logTracker.stopMonitoring();
+    logTracker.stopLogging();
 
 
 # Example
 
-const logTracker = require('log-tracker');
+    const logTracker = require('log-tracker');
 
-// Customize log level and format (optional)
-logTracker.setLogLevel('info');
-logTracker.setLogFormat('{timestamp} [{level}] {message}');
+    // Customize log level and format (optional)
+    logTracker.setLogLevel('info');
+    logTracker.setLogFormat('{timestamp} [{level}] {message}');
 
-// Start logging
-logTracker.startLogging();
+    // Start logging
+    logTracker.startLogging();
 
-// Optionally enable file logging
-logTracker.logToFile = true;
-logTracker.logFilePath = 'app.log';
+    // Optionally enable file logging
+    logTracker.logToFile = true;
+    logTracker.logFilePath = 'app.log';
 
-// Log messages
-console.log('This is a regular log message.');
-console.info('This is an info message.');
-console.warn('Warning! Something might be wrong.');
-console.error('Error occurred:', 'Some error message.');
+    // Log messages
+    console.log('This is a regular log message.');
+    console.info('This is an info message.');
+    console.warn('Warning! Something might be wrong.');
+    console.error('Error occurred:', 'Some error message.');
 
-// Start monitoring (optional)
-logTracker.startMonitoring();
+    // Start monitoring (optional)
+    logTracker.startMonitoring();
 
-// Metrics will be logged at the specified interval while monitoring is enabled
+    // Metrics will be logged at the specified interval while monitoring is enabled
 
-// Stop monitoring and logging when done
-logTracker.stopMonitoring();
-logTracker.stopLogging();
+    // Stop monitoring and logging when done
+    logTracker.stopMonitoring();
+    logTracker.stopLogging();
 
 
 ## License
