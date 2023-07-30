@@ -1,0 +1,20 @@
+{
+  "name": "logtracker",
+  "version": "1.0.0",
+  "description": "A custom logging and monitoring module for Node.js",
+  "main": "logTracker.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": ["logging", "monitoring", "node.js"],
+  "author": "Abdulkareem Babatunde",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodeKage25/logtracker.git" 
+  },
+  "bugs": {
+    "url": "https://github.com/CodeKage25/logtracker/issues"
+  },
+  "homepage": "https://github.com/CodeKage25/logtracker#readme"
+}
